@@ -1,0 +1,16 @@
+server:
+  port: 8082
+spring:
+  kafka:
+    bootstrap-server: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: ordersdb
+
+kafka:
+  topic: inventory-order-communication-test
